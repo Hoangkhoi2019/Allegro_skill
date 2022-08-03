@@ -31,7 +31,7 @@ axlCmdRegister("spread_cline" `spread_cline )
 			cus_shell = sprintf(nil "slide ; prepopup %f %f ; group ; pick grid %f %f ; pick grid %f %f; prepopup %f %f ;complete ; pick grid %f %f ;pick grid %f %f" car(p_item1) cadr(p_item1) car(p_item1) cadr(p_item1) car(p_item2) cadr(p_item2) car(mid_point) cadr(mid_point) car(mid_point) cadr(mid_point) car(mid_point2) cadr(mid_point2))	
 			axlShellPost(cus_shell)
 			axlShellPost("done")
-			axlShellPost("smooth_seg")
+			axlShellPost("spread_cline")
 		else
 			point_list = nil
 			dis_ori = axlDistance(gridSnap1 gridSnap2)
@@ -71,7 +71,7 @@ axlCmdRegister("spread_cline" `spread_cline )
 				axlShellPost(cus_shell)
 			)
 			axlShellPost("done")
-			axlShellPost("smooth_seg")
+			axlShellPost("spread_cline")
 		)
 	)
 	
