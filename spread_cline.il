@@ -1,6 +1,6 @@
 ;######################################################
-axlCmdRegister("smooth_seg" `smooth_seg )
-(defun smooth_seg ()
+axlCmdRegister("spread_cline" `spread_cline )
+(defun spread_cline ()
 	gridSnap1 = axlEnterPoint(?prompts list("Pick origin point") ?gridSnap t)
 	gridSnap2 = axlEnterPoint(?prompts list("Pick origin point") ?gridSnap t)
 	if(gridSnap1 != nil && gridSnap2 != nil then 
